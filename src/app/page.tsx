@@ -50,8 +50,43 @@ export default function NewsVerificationSystem() {
   const [articleText, setArticletext] = useState(''); 
   const [sourceURL, setSourceURL] = useState("");  
   const [batchArticles, setBatchAnalysis] = useState(""); 
-  const [IsAnalysing, setIsAnalysing] = useState(false); 
-  const [Result, setResult] = useState("") 
+  const [isAnalysing, setIsAnalysing] = useState(false); 
+  const [result, setResult] = useState<VerficationResult | null>(null)
   const [activeTab, setActiveTab] = useState("single") 
-  
+  const [error, setError] = useState("")
+
+  const analyseNews = async () => { 
+    if (!articleText.trim()) { 
+      setError("Please enter article text to analyze") 
+      return
+    } 
+
+    setIsAnalysing(true) 
+    setError("") 
+    setResult(null)  
+
+    try { 
+      const response = await fetch("*/api/verify-news", { 
+        method: "POST",  
+        headers: { 
+          "Content-Type": "application/json", 
+        }, 
+        body: JSON.stringify({ 
+          articleText, 
+          sourceURL, 
+          analysisType: "comprehensive",
+        }),
+      })  
+      if (!response.ok) { 
+        throw new Error("Failed to analyze article")
+      } 
+      const data = await response.json() 
+      setResult(data)
+    } catch (err) { 
+      setError("Failed to analyse the article. Please try again. ") 
+      console.error(err)
+    } finally { 
+      setIsAnalysing(false)
+    }
+  } 
 }
