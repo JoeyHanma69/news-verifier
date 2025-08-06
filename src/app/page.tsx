@@ -675,4 +675,3 @@ Article 3 text here...`}
     </div>
   )
 }
-
