@@ -1,0 +1,32 @@
+# Example URLs for batch analysis
+# Lines starting with # are comments and will be ignored
+
+# Reliable sources
+https://www.reuters.com/world/
+https://apnews.com/
+https://www.bbc.com/news
+https://www.npr.org/sections/news/
+https://www.pbs.org/newshour/
+
+# Major newspapers
+https://www.nytimes.com/
+https://www.washingtonpost.com/
+https://www.wsj.com/
+https://www.theguardian.com/us
+
+# TV news
+https://www.cnn.com/
+https://www.foxnews.com/
+https://www.msnbc.com/
+
+# Digital news
+https://www.politico.com/
+https://www.axios.com/
+https://www.vox.com/
+
+# International sources
+https://www.dw.com/en/
+https://www.aljazeera.com/
+https://www.france24.com/en/
+
+# Add your own URLs here for testing

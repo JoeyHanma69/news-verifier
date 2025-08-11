@@ -1,0 +1,58 @@
+# Reliable news URLs for training
+# These URLs will be labeled as reliable (0) during training
+
+# Reuters
+https://www.reuters.com/world/us/
+https://www.reuters.com/business/
+https://www.reuters.com/technology/
+https://www.reuters.com/markets/
+
+# Associated Press
+https://apnews.com/hub/politics
+https://apnews.com/hub/business
+https://apnews.com/hub/technology
+https://apnews.com/hub/health
+
+# BBC News
+https://www.bbc.com/news/world
+https://www.bbc.com/news/business
+https://www.bbc.com/news/technology
+https://www.bbc.com/news/health
+
+# NPR
+https://www.npr.org/sections/politics/
+https://www.npr.org/sections/business/
+https://www.npr.org/sections/health-shots/
+https://www.npr.org/sections/technology/
+
+# PBS NewsHour
+https://www.pbs.org/newshour/politics
+https://www.pbs.org/newshour/economy
+https://www.pbs.org/newshour/health
+https://www.pbs.org/newshour/science
+
+# The Guardian
+https://www.theguardian.com/us-news
+https://www.theguardian.com/business
+https://www.theguardian.com/technology
+https://www.theguardian.com/science
+
+# Wall Street Journal
+https://www.wsj.com/news/politics
+https://www.wsj.com/news/business
+https://www.wsj.com/news/technology
+https://www.wsj.com/news/markets
+
+# New York Times
+https://www.nytimes.com/section/politics
+https://www.nytimes.com/section/business
+https://www.nytimes.com/section/technology
+https://www.nytimes.com/section/health
+
+# Washington Post
+https://www.washingtonpost.com/politics/
+https://www.washingtonpost.com/business/
+https://www.washingtonpost.com/technology/
+https://www.washingtonpost.com/health/
+
+# Add more reliable URLs here as needed
